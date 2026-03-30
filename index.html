@@ -113,7 +113,8 @@ scroll-behaviour: smooth;
           
          .box {
          width: 100%;
-         height: 30%;
+         height: 250px;
+             max-height:300px:
          object-fit: cover;
          z-index:1;
          background-image:url("file:///storage/emulated/0/Download/images (21).jpeg");
@@ -196,11 +197,14 @@ z-index: 1;
                      }
                      .slider { display: flex;
                      width: 75%;
-                     height: 250px;
+                     max-width:900px;         
+                     height: auto;
+                              
                      justify-content: center;
                      gap: 20px;
                      margin: 20px auto;
                      position: relative;}
+             
                     
                      
 .slider:hover .slide{
@@ -211,7 +215,7 @@ z-index: 1;
     flex:6;
 }
 
-.slide{ 
+.slide{ height:250px;
     position: relative;
     flex:1;
     overflow: hidden;
@@ -239,7 +243,7 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(233, 246, 247, 1
 }
 .slide img{
     width: 100%;
-    height: 200px;
+    height: 100%px;
     object-fit: cover;
     border-radius: 5%;
     transition:transform 0.5s ease-in-out;
